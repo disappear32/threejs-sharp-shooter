@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Sharp Shooter</title>
+	<!-- Подключение Three.js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+	<!-- Подключение Tween.js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/20.0.3/tween.umd.js"></script>
+	<!-- Подключение dat.gui -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.7/dat.gui.min.js"></script>
+  </head>
+  
+	<style>
+		html,
+		body {
+			margin: 0;
+			height: 100%;
+		}
+
+		#app {
+			width: 100%;
+			height: 100%;
+			display: block;
+		}
+
+		.dealer-bar {
+			position: absolute;
+			top: 0px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+		.dealer-bar p {
+			text-align: center;
+			font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+			font-size: 24px;
+			font-weight: bolder;
+		}
+
+		.hp-bar {
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: center;
+		}
+
+		.hp-bar-zone {
+			height: 20px;
+			width: 100px;
+			margin-right: 10px;
+			margin-left: 10px;
+
+			border: 3px solid black;
+			border-radius: 5px;
+
+			background-color: red;
+		}
+
+		.hp-bar-zone.transition {
+			transition: background-color 0.5s;
+		}
+	</style>
+</head>
+
+<body>
+	<canvas id="app"></canvas>
+	<script type="module" src="src/main.js"></script>
+	<div class="dealer-bar">
+		<p>Dealer</p>
+		<div class="hp-bar">
+			<div class="hp-bar-zone"></div>
+			<div class="hp-bar-zone"></div>
+			<div class="hp-bar-zone"></div>
+		</div>
+	</div>
+</body>
+
+</html>
