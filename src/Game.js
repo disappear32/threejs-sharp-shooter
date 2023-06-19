@@ -24,18 +24,18 @@ export default class Game extends THREE.Scene {
     async load() {
         // Создание текстур с номером для точек
         const textureUrls = [
-            { url: '/assets/1-red.png' },
-            { url: '/assets/2-red.png' },
-            { url: '/assets/3-red.png' },
-            { url: '/assets/4-red.png' },
-            { url: '/assets/5-red.png' },
-            { url: '/assets/6-red.png' },
-            { url: '/assets/1-blue.png' },
-            { url: '/assets/2-blue.png' },
-            { url: '/assets/3-blue.png' },
-            { url: '/assets/4-blue.png' },
-            { url: '/assets/5-blue.png' },
-            { url: '/assets/6-blue.png' }
+            { url: 'assets/1-red.png' },
+            { url: 'assets/2-red.png' },
+            { url: 'assets/3-red.png' },
+            { url: 'assets/4-red.png' },
+            { url: 'assets/5-red.png' },
+            { url: 'assets/6-red.png' },
+            { url: 'assets/1-blue.png' },
+            { url: 'assets/2-blue.png' },
+            { url: 'assets/3-blue.png' },
+            { url: 'assets/4-blue.png' },
+            { url: 'assets/5-blue.png' },
+            { url: 'assets/6-blue.png' }
         ]
 
         const loader = new THREE.TextureLoader()
